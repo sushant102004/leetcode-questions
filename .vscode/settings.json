@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "regex": "cpp"
+    }
+}
