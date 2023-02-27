@@ -33,8 +33,29 @@ int evalPostxi(vector<string> tokens){
     return st.top();
 }
 
+// Simple Method
+
+int evalMethodTwo(vector<string> &tokens){
+    stack<int> st;
+
+    for(auto &i : tokens){
+        if(i == "+" || i == "-" || i == "*" || i == "/"){
+            int a = st.top();
+            st.pop();
+            int b = st.top();
+            st.pop();
+
+            if(i == "+") st.push(b + a);
+            if(i == "-") st.push(b - a);
+            if(i == "*") st.push(b * a);
+            if(i == "/") st.push(b / a);
+        } else st.push(stoi(i));
+    }
+    return st.top();
+}
+
 int main(){
-    vector<string>tokens = {"2","1","+","3","*"};
-    cout << evalPostxi(tokens);
+    vector<string>tokens = {"4","13","5","/","+"};
+    cout << evalMethodTwo(tokens);
     return 0;
 }
