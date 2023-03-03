@@ -5,6 +5,10 @@
         "complex": "cpp",
         "istream": "cpp",
         "ostream": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     }
 }
